@@ -1,0 +1,11 @@
+*.class
+.git
+.metadata
+bin/
+/target
+*.jar
+!postgresql-9.0-801.jdbc4.jar
+.classpath
+.project
+settigs/
+.settings

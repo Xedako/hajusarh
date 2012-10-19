@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="hajusarh" default="deploy" basedir=".">
+		
+		<property name="jdbc.driverClassName" value="org.postgresql.Driver"/>
+		<property name="jdbc.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+		<property name="jdbc.databaseurl" value="jdbc:postgresql://localhost:5432"/>
+		<property name="jdbc.databaseName" value="hajusarh"/>
+		<property name="jdbc.username" value="postgres"/>
+		<property name="jdbc.password" value="qwerty123"/>
+		<property name="jdbc.classpath" value="postgresql-9.0-801.jdbc4.jar"/>
+		<property name="db_recreate_database_sql" value="db-recreate-database.sql"/>
+		<property name="db_recreate_sql" value="db-recreate.sql"/>
+	
+	<!-- ================================================================== -->
+	<!-- Initialization of all property settings                            -->
+	<!-- ================================================================== -->
+
+	<target name="db-recreate">
+			<property environment="ENV" />
+			<property name="tomcat.home" location="${ENV.TOMCAT_HOME}" />
+		
+		<sql 
+			encoding="UTF8" 
+			classpath="${jdbc.classpath}"
+			driver="${jdbc.driverClassName}" 
+			url="${jdbc.databaseurl}" 
+			userid="${jdbc.username}" 
+			password="${jdbc.password}"
+			src="${db_recreate_database_sql}"
+			onerror="stop" 
+			autocommit="true">
+		</sql>
+		
+		<sql 
+			encoding="UTF8" 
+			classpath="${jdbc.classpath}"
+			driver="${jdbc.driverClassName}" 
+			url="${jdbc.databaseurl}/${jdbc.databaseName}" 
+			userid="${jdbc.username}" 
+			password="${jdbc.password}"
+			src="${db_recreate_sql}"
+			onerror="stop" 
+			autocommit="false">
+		</sql>
+	</target>
+	
+	<!-- ================================================================================= -->
+	<!-- Kopeerib jar-faili lokaalarvuti Tomcat-i /lib kataloogi                           -->
+	<!-- ================================================================================= -->
+	
+	
+		<target name="add_libs">
+		<copy todir="${tomcat.home}/lib" overwrite="true">
+			<fileset dir="." includes="*.jar" />
+		</copy>
+	</target>
+
+
+	<!-- ================================================================================= -->
+	<!-- Deployment . Kopeerib war-faili lokaalarvuti Tomcat-i /webapps kataloogi          -->
+	<!-- ================================================================================= -->
+
+
+	<target name="deploy" depends="add_libs">
+		<copy todir="${tomcat.home}/webapps" overwrite="true">
+			<fileset dir="." includes="*.war" />
+		</copy>
+	</target>
+</project>

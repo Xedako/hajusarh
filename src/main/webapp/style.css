@@ -1,0 +1,158 @@
+/*
+	99Lime.com HTML KickStart by Joshua Gatcke
+	kickstart-layout.css
+	
+	// Google Fonts
+*/
+
+/*---------------------------------
+	IMPORTS
+-----------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+header, nav, section, article, aside, footer {
+	display: block;
+}
+
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 10px;
+	background: white;
+	border: 1px solid black;
+}
+
+#header {
+	border: 1px solid black;
+	margin-bottom:10px;
+	padding-top:1px;
+	height: 100px;
+	background: #EFEFEF;
+	color:#999;
+	text-align:center;
+	text-shadow:0px 1px 1px #fff;
+}
+
+.header-title{
+	margin: 0;
+	position: relative;
+	top: 8px;
+}
+
+.header-lang-choice{
+	float: right;
+	margin: 10px;
+	text-weight:bold;
+}
+
+#middle {
+	border-left: 250px solid #EFEFEF;
+	height: 1%;
+	position: relative;
+}
+#middle:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+#container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	margin-right: -100%;
+}
+#content {
+	padding: 0 20px;
+	margin-left:10px;
+	border: 1px solid black;
+	overflow: auto;
+}
+
+#sideLeft {
+	border: 1px solid black;
+	background: none repeat scroll 0 0 #EFEFEF;
+	float: left;
+	left: -250px;
+	margin: 10px;
+	padding: 0;
+	position: relative;
+	width: 230px;
+}
+
+#footer {
+	border: 1px solid black;
+	margin-top:10px;
+	height: 40px;
+	text-align:center;
+	background:#efefef;
+	color:#999;
+	font-size:0.8em;
+	text-shadow:0px 1px 1px #fff;
+}
+
+/*---------------------------------
+	OVERRIDES
+-----------------------------------*/
+h1,h2,h3,h4,h5,h6{
+font-family: "Trebuchet Ms", arial, verdana, sans-serif;
+}
+
+thead th,
+tbody th{
+font-family: "Trebuchet Ms", arial, verdana, sans-serif;
+}
+
+button,
+a.btn,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+font-family: "Trebuchet Ms", arial, verdana, sans-serif;
+}
+
+.menu{
+font-family: "Trebuchet Ms", arial, verdana, sans-serif;
+}
+
+blockquote{
+font-family: "Trebuchet Ms", arial, verdana, sans-serif;
+}
+
+/*---------------------------------
+	LAYOUT
+-----------------------------------*/
+body{
+margin:0;
+padding:0;
+color:#000;
+background:#efefef url(css/img/grid.png) repeat center top;
+font:normal 0.9em/150% 'Arimo', "Trebuchet MS", arial, verdana, sans-serif;
+text-shadow: 0px 0px 1px transparent; /* google font pixelation fix */
+}
+
+#wrap{
+width:960px;/*960*/
+background:#fff;
+margin:30px auto 30px auto;
+padding:0;
+border:1px solid #ccc;
+}
+
+	#link-top{
+	float:right;
+	color:#666;
+	text-decoration:none;
+	display: inline-block;
+	padding:5px 10px;
+	background:#e5e5e5;
+	line-height:100%;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	}

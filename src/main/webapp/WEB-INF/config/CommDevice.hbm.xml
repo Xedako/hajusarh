@@ -1,0 +1,16 @@
+<?xml version='1.0'  encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="hajusarh.data.CommDevice" table="comm_device">
+		<id column="comm_device" name="commDevice" type="java.lang.Integer">
+			<generator class="increment" />
+		</id>
+		<many-to-one column="comm_device_type" name="commDeviceType" class="hajusarh.data.CommDeviceType" lazy="false"/>
+		<property column="customer" name="customer" type="java.lang.Integer" />
+		<property column="value_text" name="valueText" type="java.lang.String" />
+		<property column="orderb" name="orderb" type="java.lang.Integer" />
+		<property column="created" name="created" type="java.util.Date" />
+	</class>
+</hibernate-mapping>

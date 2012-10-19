@@ -1,0 +1,22 @@
+<?xml version='1.0'  encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="hajusarh.data.Customer" table="customer">
+		<id column="customer" name="customer" type="java.lang.Integer">
+			<generator class="increment" />
+		</id>
+		<property column="first_name" name="firstName" type="java.lang.String" />
+		<property column="last_name" name="lastName" type="java.lang.String" />
+		<property column="identity_code" name="identityCode" type="java.lang.String" />
+		<property column="note" name="note" type="java.lang.String" />
+		<property column="birth_date" name="birthDate" type="java.util.Date" />
+		<property column="created" name="created" type="java.util.Date" />
+		<property column="created_by" name="createdBy" type="java.lang.Integer" />
+		<property column="updated" name="updated" type="java.util.Date" />
+		<property column="updated_by" name="updatedBy" type="java.lang.Integer" />
+		<property column="cst_type" name="cstType" type="java.lang.Integer" />
+		<property column="cst_state_type" name="cstStateType" type="java.lang.Integer" />
+	</class>
+</hibernate-mapping>

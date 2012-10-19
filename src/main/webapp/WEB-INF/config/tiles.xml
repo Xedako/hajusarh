@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="sideLeft" value="/WEB-INF/jsp/sideLeft.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	
+	<definition name="showAllCustomers" extends="base.definition">
+		<put-attribute name="title" value="Customers" />
+		<put-attribute name="content" value="/WEB-INF/jsp/content/showAllCustomers.jsp" />
+	</definition>
+	<definition name="addCustomer" extends="base.definition">
+		<put-attribute name="title" value="AddCustomer" />
+		<put-attribute name="content" value="/WEB-INF/jsp/content/addCustomer.jsp" />
+	</definition>
+	<definition name="editCustomer" extends="base.definition">
+		<put-attribute name="title" value="Edit customer" />
+		<put-attribute name="content" value="/WEB-INF/jsp/content/editCustomer.jsp" />
+	</definition>
+	<definition name="addCommDevice" extends="base.definition">
+		<put-attribute name="title" value="Add commDevice" />
+		<put-attribute name="content" value="/WEB-INF/jsp/content/addCommDevice.jsp" />
+	</definition>
+	<definition name="showAllCommDevices" extends="base.definition">
+		<put-attribute name="title" value="CommDevices" />
+		<put-attribute name="content" value="/WEB-INF/jsp/content/showAllCommDevices.jsp" />
+	</definition>
+	<definition name="editCommDevice" extends="base.definition">
+		<put-attribute name="title" value="Edit commDevice" />
+		<put-attribute name="content" value="/WEB-INF/jsp/content/editCommDevice.jsp" />
+	</definition>
+
+</tiles-definitions>

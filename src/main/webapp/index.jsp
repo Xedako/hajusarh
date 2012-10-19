@@ -1,0 +1,1 @@
+<jsp:forward page="showAllCustomers.html"></jsp:forward>
