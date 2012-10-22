@@ -20,6 +20,7 @@
 <bean id="CustomerService" class="hajusarh.service.CustomerServiceImpl" />
 <bean id="CommDeviceService" class="hajusarh.service.CommDeviceServiceImpl" />
 <bean id="CommDeviceTypeService" class="hajusarh.service.CommDeviceTypeServiceImpl" />
+<bean id="CstAddressService" class="hajusarh.service.CstAddressServiceImpl" />
 <!-- MAIN PROJECT BEANS -->
 
 	<bean id="viewResolver"
@@ -102,6 +103,7 @@
 				<value>/WEB-INF/config/Customer.hbm.xml</value>
 				<value>/WEB-INF/config/CommDevice.hbm.xml</value>
 				<value>/WEB-INF/config/CommDeviceType.hbm.xml</value>
+				<value>/WEB-INF/config/CstAddress.hbm.xml</value>
 			</list>
 		</property>
 		<property name="configurationClass">

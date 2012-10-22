@@ -36,5 +36,18 @@
 		<put-attribute name="title" value="Edit commDevice" />
 		<put-attribute name="content" value="/WEB-INF/jsp/content/editCommDevice.jsp" />
 	</definition>
+	<definition name="showAllCstAddresses" extends="base.definition">
+		<put-attribute name="title" value="CstAddresses" />
+		<put-attribute name="content" value="/WEB-INF/jsp/content/showAllCstAddresses.jsp" />
+	</definition>
+	<definition name="editCstAddress" extends="base.definition">
+		<put-attribute name="title" value="Edit cstAddress" />
+		<put-attribute name="content" value="/WEB-INF/jsp/content/editCstAddress.jsp" />
+	</definition>
+	<definition name="addCstAddress" extends="base.definition">
+		<put-attribute name="title" value="Add cstAddress" />
+		<put-attribute name="content" value="/WEB-INF/jsp/content/addCstAddress.jsp" />
+	</definition>
+	
 
 </tiles-definitions>

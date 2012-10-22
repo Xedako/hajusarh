@@ -2,7 +2,11 @@
 <%@ taglib prefix="html" tagdir="/WEB-INF/tags/html" %>
 
 <%@ attribute name="name" required="true" rtexprvalue="true" %>
-<%@ attribute name="label" required="true" rtexprvalue="true" %>
+<%@ attribute name="label" required="false" rtexprvalue="true" %>
+
+<c:if test="${empty label}">
+	<c:set var="label" value="Enter your ${name}:" />
+</c:if>
 
 
 <script type="text/javascript">

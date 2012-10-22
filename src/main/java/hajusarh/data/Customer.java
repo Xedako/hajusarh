@@ -3,7 +3,7 @@ package hajusarh.data;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Customer implements Serializable {
+public class Customer extends Auditable implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -13,10 +13,6 @@ public class Customer implements Serializable {
 	private String identityCode;
 	private String note;
 	private Date birthDate;
-	private Date created;
-	private Integer createdBy;
-	private Date updated;
-	private Integer updatedBy;
 	private Integer cstType;
 	private Integer cstStateType;
 
@@ -66,38 +62,6 @@ public class Customer implements Serializable {
 
 	public void setBirthDate(Date birthDate) {
 		this.birthDate = birthDate;
-	}
-
-	public Date getCreated() {
-		return created;
-	}
-
-	public void setCreated(Date created) {
-		this.created = created;
-	}
-
-	public Integer getCreatedBy() {
-		return createdBy;
-	}
-
-	public void setCreatedBy(Integer createdBy) {
-		this.createdBy = createdBy;
-	}
-
-	public Date getUpdated() {
-		return updated;
-	}
-
-	public void setUpdated(Date updated) {
-		this.updated = updated;
-	}
-
-	public Integer getUpdatedBy() {
-		return updatedBy;
-	}
-
-	public void setUpdatedBy(Integer updatedBy) {
-		this.updatedBy = updatedBy;
 	}
 
 	public Integer getCstType() {

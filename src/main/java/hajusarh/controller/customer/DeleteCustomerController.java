@@ -4,10 +4,6 @@
 
 package hajusarh.controller.customer;
 
-import hajusarh.controller.BaseController;
-import hajusarh.service.CustomerService;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.Validator;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,10 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class DeleteCustomerController extends BaseController {
-
-	@Autowired
-	private CustomerService customerService;
+public class DeleteCustomerController extends CustomerBaseController {
 
 	@Override
 	protected Validator getValidator() {

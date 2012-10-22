@@ -6,15 +6,15 @@
 <fieldset>
 	<legend>Add customer</legend>
 	<html:form modelAttribute="customer" action="/addCustomer.json" method="POST">
-		<html:input name="firstName" label="Enter your first name:" />
-		<html:input name="lastName" label="Enter your last name:" />
-		<html:input name="identityCode" label="Enter your identityCode:" />
-		<html:input name="note" label="Enter your note:" />
-		<html:inputDate name="birthDate" label="Enter your birthDate:" />
-		<html:input name="createdBy" label="Enter your createdBy:" />
-		<html:input name="updatedBy" label="Enter your updatedBy:" />
-		<html:input name="cstType" label="Enter your cstType:" />
-		<html:input name="cstStateType" label="Enter your cstStateType:" />
+		<html:input name="firstName" />
+		<html:input name="lastName" />
+		<html:input name="identityCode" />
+		<html:input name="note" />
+		<html:inputDate name="birthDate" />
+		<html:input name="createdBy" />
+		<html:input name="updatedBy" />
+		<html:input name="cstType" />
+		<html:input name="cstStateType" />
 		<html:formButtons />
 	</html:form>
 </fieldset>

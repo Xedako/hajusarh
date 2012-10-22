@@ -10,10 +10,10 @@
 		<html:select name="commDeviceType" 
 			selectedItemValue="${commDevice.commDeviceType.commDeviceType}" 
 			items="${commDeviceTypes}" itemValue="commDeviceType" 
-			itemLabel="name" label="Enter your commDeviceType:"/>
-		<html:input name="customer" label="Enter your customer:" />
-		<html:input name="valueText" label="Enter your valueText:" />
-		<html:input name="orderb" label="Enter your orderb:" />
+			itemLabel="name" />
+		<html:input name="customer" />
+		<html:input name="valueText" />
+		<html:input name="orderb" />
 		<html:formButtons />
 	</html:form>
 </fieldset>

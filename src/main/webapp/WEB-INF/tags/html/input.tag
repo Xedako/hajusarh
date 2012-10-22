@@ -7,7 +7,7 @@
 <%@ attribute name="hidden" required="false" rtexprvalue="true" %>
 
 <c:if test="${empty label}">
-	<c:set var="label" value="" />
+	<c:set var="label" value="Enter your ${name}:" />
 </c:if>
 
 <c:if test="${empty hidden}">
