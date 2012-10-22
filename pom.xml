@@ -1,45 +1,46 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>hajusarh</groupId>
-  <artifactId>hajusarh</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
-  <name>hajusarh</name>
-  <packaging>war</packaging>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>hajusarh</groupId>
+	<artifactId>hajusarh</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>hajusarh</name>
+	<packaging>war</packaging>
 	<properties>
 		<spring.version>3.0.0.RELEASE</spring.version>
 		<slf4j.version>1.5.6</slf4j.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jackson.version>1.9.4</jackson.version>
- 		<hibernate.validator.version>4.2.0.Final</hibernate.validator.version>
+		<hibernate.validator.version>4.2.0.Final</hibernate.validator.version>
 	</properties>
 	<dependencies>
-    <!--  Gson: Java to Json conversion -->
-    <dependency>
-      <groupId>com.google.code.gson</groupId>
-      <artifactId>gson</artifactId>
-      <version>2.2.2</version>
-    </dependency>
-	<!-- JSON Serialization Dependencies -->
-	<dependency>
-		<groupId>org.codehaus.jackson</groupId>
-		<artifactId>jackson-core-asl</artifactId>
-		<version>${jackson.version}</version>
-	</dependency>
-	<dependency>
-		<groupId>org.codehaus.jackson</groupId>
-		<artifactId>jackson-mapper-asl</artifactId>
-		<version>${jackson.version}</version>
-	</dependency>
-	<dependency>
-		<groupId>org.hibernate</groupId>
-		<artifactId>hibernate-validator</artifactId>
-		<version>${hibernate.validator.version}</version>
-	</dependency>
-	<dependency>
-		<groupId>javax.validation</groupId>
-		<artifactId>validation-api</artifactId>
-		<version>1.0.0.GA</version>
-	</dependency>
+		<!-- Gson: Java to Json conversion -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.2.2</version>
+		</dependency>
+		<!-- JSON Serialization Dependencies -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-asl</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>${hibernate.validator.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.0.0.GA</version>
+		</dependency>
 		<!-- Tiles 2 Dependencies -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
@@ -146,11 +147,8 @@
 			<scope>runtime</scope>
 		</dependency>
 		<!-- MySQL JDBC Connector -->
-		<!--
-			<dependency> <groupId>com.mysql.jdbc</groupId>
-			<artifactId>com.springsource.com.mysql.jdbc</artifactId>
-			<version>5.1.6</version> </dependency>
-		-->
+		<!-- <dependency> <groupId>com.mysql.jdbc</groupId> <artifactId>com.springsource.com.mysql.jdbc</artifactId> 
+			<version>5.1.6</version> </dependency> -->
 
 		<!-- Hibernate -->
 		<dependency>
@@ -162,7 +160,7 @@
 			<groupId>javax.transaction</groupId>
 			<artifactId>jta</artifactId>
 			<version>1.1</version>
-		</dependency>		
+		</dependency>
 
 		<!-- JPA -->
 		<dependency>
@@ -234,6 +232,11 @@
 			<version>1.2.0</version>
 		</dependency>
 		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
 			<groupId>org.apache.taglibs</groupId>
 			<artifactId>com.springsource.org.apache.taglibs.standard</artifactId>
 			<version>1.1.2</version>
@@ -246,12 +249,12 @@
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
-    		<groupId>org.jdom</groupId>
-    		<artifactId>com.springsource.org.jdom</artifactId>
-    		<version>1.1.0</version>
-    		<scope>runtime</scope>
+			<groupId>org.jdom</groupId>
+			<artifactId>com.springsource.org.jdom</artifactId>
+			<version>1.1.0</version>
+			<scope>runtime</scope>
 		</dependency>
-				
+
 		<!-- JAXB -->
 		<dependency>
 			<groupId>javax.xml.bind</groupId>

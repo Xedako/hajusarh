@@ -6,8 +6,7 @@
 <fieldset>
 	<legend>Add commDevice</legend>
 	<html:form modelAttribute="commDevice" action="/addCommDevice.json" method="POST">
-		<html:input name="commDeviceType" label="Enter your commDeviceType:" />
-		<html:select items="${commDeviceTypes}" name="commDeviceType" itemLabel="name" itemValue="commDeviceType" />
+		<html:select items="${commDeviceTypes}" name="commDeviceType" itemLabel="name" itemValue="commDeviceType" label="Enter your commDeviceType:"/>
 		<html:input name="customer" label="Enter your customer:" />
 		<html:input name="valueText" label="Enter your valueText:" />
 		<html:input name="orderb" label="Enter your orderb:" />

@@ -1,5 +1,5 @@
 -- Database: hajusarh
-DROP DATABASE hajusarh;
+DROP DATABASE IF EXISTS hajusarh;
 
 CREATE DATABASE hajusarh
   WITH OWNER = hajusarh_user

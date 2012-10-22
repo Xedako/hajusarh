@@ -21,10 +21,7 @@ public class ShowAllCommDevicesController {
 
 	@RequestMapping("/showAllCommDevices")
 	public ModelAndView showAllCommDevices() {
-		System.out
-				.println("\n\n\nShowAllCommDevicesController.showAllCommDevices()");
 		List<CommDevice> commDevices = commDeviceService.findAllCommDevices();
-		System.out.println(commDevices.get(0).getCommDeviceType());
 		return new ModelAndView("showAllCommDevices", "commDevices",
 				commDevices);
 	}
